@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+
+       android:orientation="vertical"
+       >
+       <EditText
+           android:id="@+id/txt1"
+           android:layout_width="match_parent"
+           android:textSize="30dp"
+           android:hint=" Id"
+           android:textAlignment="center"
+           android:textColor="@color/cardview_dark_background"
+           android:layout_height="wrap_content"/>
+       <EditText
+           android:id="@+id/txt2"
+           android:layout_width="match_parent"
+           android:textSize="30dp"
+           android:textAlignment="center"
+           android:hint="Notes"
+           android:textColor="@color/cardview_dark_background"
+           android:layout_height="wrap_content"/>
+       <Button
+           android:id="@+id/btn"
+           android:layout_gravity="center"
+           android:text="insert"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:id="@+id/btn2"
+           android:layout_gravity="center"
+           android:text="update"
+           android:layout_marginTop="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <Button
+           android:id="@+id/btn3"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+
+           android:text="Delete"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <Button
+           android:id="@+id/btn4"
+           android:layout_marginTop="10dp"
+
+           android:layout_gravity="center"
+           android:text="  Search.... "
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <TextView
+           android:id="@+id/vi1"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+       <TextView
+           android:id="@+id/vi2"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="GET TODOS"
+           android:onClick="getTodos"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="GET TODO using Route Parameter"
+           android:onClick="getTodoUsingRouteParameter"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="GET TODOS using Query"
+           android:onClick="getTodosUsingQuery"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="POST TODO"
+           android:onClick="postTodo"/>
+   </LinearLayout>
+</ScrollView>
